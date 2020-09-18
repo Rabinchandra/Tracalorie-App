@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar navbar-dark bg-dark d-flex justify-content-end">
+        <div class="navbar-brand font-weight-bold m-auto">TRICALORIE</div>
+        <button class="btn btn-primary float-left clear">CLEAR ALL</button>
+    </div>
+    <!-- input -->
+    <div class="container mt-3 border p-4 mb-3">
+        <div class="h3">Add Meal/Food</div>       
+        <div class="form-group row mt-4 lead">
+            <label for="food" class="col-sm-1 col-form-label mr-2">Meal: </label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="food">
+            </div>
+
+            <label for="calorie" class="col-sm-1 col-form-label mr-4">Calorie: </label>
+            <div class="col-sm-4">
+                <input type="number" class="form-control" id="calorie">
+            </div>
+        </div>
+        <div class="btn-container">
+            <!-- <div class="btn btn-success add-food">Add <i class="fas fa-plus-circle"></i></div> -->
+            
+        </div>
+    </div>
+
+    <div class="total-calore text-center text-success h2">Total Calories: <span class="total-calorie-value"></span></div>
+    <hr width="90%">
+    <!-- Food list -->
+    <div class="meal-list-container container">
+        <div class="text-center font-weight-bold lead">List of Meal/Food</div>
+        <ul class="list-group food-list mt-3">
+        </ul>
+    </div>
+
+    <div style="height: 200px;"></div>
+    <script src="state.js"></script>
+    <script src="app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f33a1483e3.js" crossorigin="anonymous"></script>
+</body>
+</html>
